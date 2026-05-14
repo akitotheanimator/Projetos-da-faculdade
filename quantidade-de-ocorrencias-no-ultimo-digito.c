@@ -15,17 +15,10 @@ int lerasparadinhas(int array[], int tamanho)
 
 int main()
 {
-    int tamanho = 1;
-    printf("Escreva o tamanho de sua array: ");
-    scanf("%i", &tamanho);
-    int vetor[tamanho];
+    int tamanho = 15;
+    int vetor[] = {1,5,1,2,5,3,56,6,1,2,51,1,3,2,3};
     
-    
-    printf("\nDigite o numeros da sequencia de sua array: \n");
-    for (int i = 0; i < tamanho; i++)
-    {
-        scanf("%i", &vetor[i]);
-    }
+
     printf("\nCalculando quantas ocorrencias o ultimo digito possui: ");
     int ocorrencias = lerasparadinhas(vetor, tamanho);
     printf("%i",ocorrencias);
