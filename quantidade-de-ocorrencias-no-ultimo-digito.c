@@ -1,5 +1,18 @@
 #include <stdio.h>
 
+int lerasparadinhas(int array[], int tamanho)
+{
+    int ocorrencias = 0;
+    for (int i = 0; i < tamanho; i++)
+    {
+        if (array[i] == array[tamanho -1])
+        {
+            ocorrencias += 1;
+        }
+    }
+    return ocorrencias;
+}
+
 int main()
 {
     int tamanho = 1;
@@ -14,14 +27,7 @@ int main()
         scanf("%i", &vetor[i]);
     }
     printf("\nCalculando quantas ocorrencias o ultimo digito possui: ");
-    int ocorrencias = 0;
-    for (int i = 0; i < tamanho; i++)
-    {
-        if (vetor[i] == vetor[tamanho -1])
-        {
-            ocorrencias += 1;
-        }
-    }
+    int ocorrencias = lerasparadinhas(vetor, tamanho);
     printf("%i",ocorrencias);
     return 0;
 }
