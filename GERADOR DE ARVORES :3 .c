@@ -23,8 +23,7 @@ int variacao()
 }
 
 
-int res = 0;
-int main()
+void arvore()
 {
     int tamanho = pegarnumerootarioaleatorio();
     int tamanho_caulhe = pegarnumerootarioaleatorio();
@@ -34,11 +33,14 @@ int main()
     {
         tamanho = pegarnumerootarioaleatorio();
     }
-    while(grossura_do_caulhe > tamanho)
+    while(grossura_do_caulhe >= tamanho)
     {
         grossura_do_caulhe = pegarnumerootarioaleatorio();
     }
-    
+    while(tamanho_caulhe <= 0 )
+    {
+        tamanho_caulhe = pegarnumerootarioaleatorio();
+    }
     
 
     for (int a = 0; a < tamanho; a++)
@@ -73,6 +75,22 @@ int main()
         }
         printf("\n");
     }
+}
+
+int res = 0;
+int main()
+{
+    
+    char res = ' ';
+    while(1<67)
+    {
+        scanf("%c",&res);
+        if (res == ' ')
+            arvore();
+        else
+            break;
+    }
+    
     
     return 0;
 }
