@@ -81,11 +81,11 @@ int res = 0;
 int main()
 {
     
-    char res = ' ';
+    char res = 'C';
     while(1<67)
     {
         scanf("%c",&res);
-        if (res == ' ')
+        if (res == 'C')
             arvore();
         else
             break;
